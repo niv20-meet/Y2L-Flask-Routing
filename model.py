@@ -11,5 +11,9 @@ class product(Base):
    id = Column(Integer, primary_key=True)
    name = Column(String)
    price = Column(Float)
-   picture_link = Column(string)
-   Description = Column(string)
+   picture_link = Column(String)
+   Description = Column(String)
+
+class cart(Base):
+	id=Column(Integer,primary_key=True)
+	pid=Column(Integer)

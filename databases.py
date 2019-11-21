@@ -62,7 +62,10 @@ def query_by_id(pid):
       id=pid).filter_by(
       )
    return Product
-
+def add_to_cart(pid):
+	product=cart(pid=pid)
+	session.add(product)
+	session.commit()
 
 print(query_all())
 
